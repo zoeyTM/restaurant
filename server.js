@@ -7,7 +7,7 @@ var PORT = 8000;
 var reserve = require('./app/routing/apiRouting');
 var tables = require('./app/routing/htmlRouting');
 
-// app.use(reserve);
+app.use(reserve);
 app.use(tables);
 
 app.listen(PORT, function () {
